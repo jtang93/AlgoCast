@@ -10,5 +10,8 @@
     "testEnvironment": "node"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "repl": "^0.1.3"
+  }
 }
