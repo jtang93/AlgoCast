@@ -9,12 +9,25 @@
 
 function palindrome(str) {
 
-  return str.split('').reverse().join('')===str
+  // return str.split('').reverse().join('')===str
 
   // return str.split('').every((char, i) => {
   //     return char === str[str.length - i -1]
   //   }
   // )
+
+  let strArray = str.split('')
+  let isPalindrome = null
+  for (i = 0; i <= Math.floor(strArray.length/2); i++) {
+    // strArray[i]===strArray[strArray.length-1-i]? isPalindrome=true : return false
+    if (strArray[i]===strArray[strArray.length-1-i]) {
+      isPalindrome = true
+    }
+    else {
+      return false
+    }
+  }
+  return isPalindrome
 }
 
 module.exports = palindrome;
