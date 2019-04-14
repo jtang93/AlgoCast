@@ -29,6 +29,9 @@ function vowels(str) {
   }
   return count
 
+  //regex solution
+  // return str.match(/[aeiou]/gi) ? str.match(/[aeiou]/gi).length : 0
+
 }
 
 module.exports = vowels;
